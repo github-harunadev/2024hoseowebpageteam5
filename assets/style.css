@@ -1,3 +1,33 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 body {
-	font-family: sans-serif;
+	font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	padding: 0;
+	margin: 0;
+	height: 100dvh;
+	width: 100%;
+}
+
+.landing-bg {
+	background: url("images/landing-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing-bg > .landing-desc {
+	margin: 0 0 14px 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 12px;
+    font-size: 22px;
+}
+.landing-bg > .landing-logo {
+	width: 458px;
+    height: 143px;
 }
