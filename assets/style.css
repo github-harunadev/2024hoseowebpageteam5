@@ -8,16 +8,21 @@ body {
 	width: 100%;
 }
 
-.landing-bg {
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper.landing-bg {
 	background: url("images/landing-bg.jpg");
     background-position: center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+.wrapper.about-bg {
+	background: url("images/about-bg-blur.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .landing-bg > .landing-desc {
@@ -30,4 +35,49 @@ body {
 .landing-bg > .landing-logo {
 	width: 458px;
     height: 143px;
+}
+
+
+.sticky-menu {
+	width: 100vw;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.sticky-menu > .logo {
+	width: 264px;
+	height: 100%;
+}
+
+.sticky-menu > .logo > img {
+	margin: 28.43px 57px;
+	width: 150px;
+	height: 42.16px;
+}
+
+.sticky-menu > .button-group {
+	display: flex;
+}
+
+.sticky-menu > .button-group > .button {
+    background: transparent;
+	width: 191px;
+    color: white;
+    border: 0;
+    font-size: medium;
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.sticky-menu > .button-group > .button:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sticky-menu > .button-group > .button.selected {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 4.48px solid #BE2222;
 }
