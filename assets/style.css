@@ -78,7 +78,9 @@ body {
     border: 0;
     font-size: medium;
 	transition: 0.1s;
-	cursor: pointer;
+	text-align: center;
+	line-height: 100px;
+	text-decoration: none;
 }
 
 .button-group > .button:hover {
