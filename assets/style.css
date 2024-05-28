@@ -17,6 +17,10 @@ body {
 	background: url("images/landing-bg.jpg");
     background-position: center;
     background-size: cover;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .wrapper.about-bg {
@@ -59,11 +63,15 @@ body {
 	height: 42.16px;
 }
 
-.sticky-menu > .button-group {
+.button-group {
 	display: flex;
 }
+.button-group.standalone {
+	height: 100px;
+	margin-top: 24px;
+}
 
-.sticky-menu > .button-group > .button {
+.button-group > .button {
     background: transparent;
 	width: 191px;
     color: white;
@@ -73,11 +81,11 @@ body {
 	cursor: pointer;
 }
 
-.sticky-menu > .button-group > .button:hover {
+.button-group > .button:hover {
     background: rgba(255, 255, 255, 0.05);
 }
 
-.sticky-menu > .button-group > .button.selected {
+.button-group > .button.selected {
     background: rgba(255, 255, 255, 0.05);
     border-bottom: 4.48px solid #BE2222;
 }
