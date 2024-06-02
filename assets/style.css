@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 body {
-	font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
 	padding: 0;
 	margin: 0;
 	height: 100dvh;
@@ -29,8 +29,24 @@ body {
     background-size: cover;
 }
 
+.wrapper.series-bg {
+	background: #0f0f0f;
+}
+
 .wrapper.staffs-bg {
 	background: #0D0D0D;
+}
+
+.background-dim {
+    transition: .5s;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100dvh;
+	position: absolute;
+}
+
+.background-dim.dim {
+    background: rgba(0, 0, 0, 1);
 }
 
 .landing-bg > .landing-desc {
@@ -94,4 +110,38 @@ body {
 .button-group > .button.selected {
     background: rgba(255, 255, 255, 0.05);
     border-bottom: 4.48px solid #BE2222;
+}
+
+.staff-subsection {
+    margin: 64px;
+}
+.staff-subsection > h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+.staff-subsection > .collection {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.staff-subsection > .collection > .item {
+    margin-right: 60px;
+}
+.staff-subsection > .collection > .item > img {
+	width: 170px;
+	height: 170px;
+}
+.staff-subsection > .collection > .item > p {
+    color: white;
+    font-weight: 500;
+    margin: 8px 0px;
+    font-size: 22px;
+}
+.staff-subsection > .collection > .item > span {
+    color: #6e6e6e;
+    font-size: 18px;
 }
