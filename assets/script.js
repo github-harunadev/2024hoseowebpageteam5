@@ -44,8 +44,10 @@ function setPath() {
 		sessionStorage.setItem("bg", 'series');
 	} else if (window.location.pathname.includes("/staffs")) {
 		sessionStorage.setItem("bg", 'staffs');
+	} else {
+		sessionStorage.setItem("bg", 'landing');
 	}
-	console.log("result " + sessionStorage.getItem("b"));
+	console.log("result " + sessionStorage.getItem("bg"));
 }
 
 function clearBG() {

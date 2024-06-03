@@ -8,19 +8,17 @@ body {
 	width: 100%;
 }
 
+.toggle-bgm {
+	
+}
+
 .wrapper {
     height: 100%;
     width: 100%;
 }
 
 .wrapper.landing-bg {
-	background: url("images/landing-bg.jpg");
-    background-position: center;
-    background-size: cover;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .wrapper.about-bg {
@@ -38,6 +36,7 @@ body {
 }
 
 .background-dim {
+	pointer-events: none;
     transition: .5s;
     background: rgba(0, 0, 0, 0);
     width: 100%;
@@ -50,14 +49,32 @@ body {
     background: rgba(0, 0, 0, 1);
 }
 
-.landing-bg > .landing-desc {
+.landing-videobg {
+	background: black;
+    z-index: -1;
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    display: flex;
+}
+.landing-videobg > video {
+	width: 100%;
+}
+.landing-content {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+.landing-content > .landing-desc {
 	margin: 0 0 14px 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: 12px;
     font-size: 22px;
 }
-.landing-bg > .landing-logo {
+.landing-content > .landing-logo {
 	width: 458px;
     height: 143px;
 }
