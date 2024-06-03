@@ -37,8 +37,8 @@ button-group 아래 button을 여러개 배치할 수 있습니다.
 # 시리즈 페이지
 
 각 포스터와 년도+이름을 입력할 수 있습니다.
-<div class="item"> 을 복제해서 더 많은 포스터를 표시할 수 있습니다.
-/assets/images/ 에 poster(숫자).jpg 이름으로 포스터 사진을 업로드하여 사용합니다.
+`<div class="item">` 을 복제해서 더 많은 포스터를 표시할 수 있습니다.
+`/assets/images/` 에 `poster(숫자).jpg` 이름으로 포스터 사진을 업로드하여 사용합니다.
 p 안에 span이 감싸져 있으며, span은 년도 표시, p는 작품 이름을 표시합니다.
 ```html
 <div class="series-collection">
@@ -82,9 +82,9 @@ assets/styles.css 스타일시트 파일을 열어서 196번째 줄에 가면 �
 # 감독 및 출연진 페이지
 
 스태프의 이름과 영문 이름, 그리고 프로필 사진을 표시합니다.
-h2에 있는 섹션 이름, 그리고 <div class="item"> 을 복제해서 더 많은 스태프를 표시할 수 있습니다.
+h2에 있는 섹션 이름, 그리고 `<div class="item">` 을 복제해서 더 많은 스태프를 표시할 수 있습니다.
 p 에는 스태프의 한국어 이름, span에는 스태프의 영어 이름을 입력합니다.
-/assets/images/ 에 staff(숫자).jpg 이름으로 포스터 사진을 업로드하여 사용합니다.
+`/assets/images/` 에 `staff(숫자).jpg` 이름으로 포스터 사진을 업로드하여 사용합니다.
 ```html
 <div class="staff-subsection">
 	<h2>섹션 이름</h2>
