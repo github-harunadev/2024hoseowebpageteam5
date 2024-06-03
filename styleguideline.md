@@ -34,48 +34,6 @@ button-group 아래 button을 여러개 배치할 수 있습니다.
 ```
 
 
-# 랜딩 페이지
-
-## 배경
-랜딩 페이지 배경에 쓰이는 스타일. 브라우저 사이즈에 맞게, 중심을 기준으로 보여집니다.
-.wrapper 클래스와 함께 사용되어야 합니다.
-/assets/images/ 에 landing-bg.jpg 이름으로 배경 사진을 업로드하여 사용합니다.
-```html
-<div class="wrapper landing-bg">
-	...
-</div>
-```
-
-## 인시디어스 
-194x55 사이즈의 인시디어스 로고.
-항상 landing-bg 의 자식으로 존재해야 합니다.
-/assets/images/ 에 insidious-logo.png 또는 insidious-logo-white.png 파일을 사용합니다.
-```html
-<div class="landing-bg">
-	<img class="landing-logo" src="assets/images/insidious-logo.png" />
-</div>
-```
-
-## 인시디어스 로고
-458x143 사이즈의 인시디어스 로고.
-항상 landing-bg 의 자식으로 존재해야 합니다.
-/assets/images/ 에 insidious-logo.png 또는 insidious-logo-white.png 파일을 사용합니다.
-```html
-<div class="landing-bg">
-	<img class="landing-logo" src="assets/images/insidious-logo.png" />
-</div>
-```
-
-## 한줄 소개문
-"모든 이야기에는 시작이 있다." 글귀가 들어갈 소개문.
-항상 landing-bg 의 자식으로 존재해야 합니다.
-```html
-<div class="landing-bg">
-	<p class="landing-desc"> ... </p>
-</div>
-```
-
-
 # 시리즈 페이지
 
 각 포스터와 년도+이름을 입력할 수 있습니다.

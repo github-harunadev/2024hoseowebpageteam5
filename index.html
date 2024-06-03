@@ -11,17 +11,25 @@
 		<link rel="stylesheet" href="assets/style.css">
 	</head>
 	<body>
-		<div class="wrapper landing-bg">
-			<p class="landing-desc">qwertyuiop.</p>
-			<img class="landing-logo" src="assets/images/insidious-logo.png" />
-			<div class="button-group standalone">
-				<a class="button" href="about/index.html">영화에 대해</button>
-				<a class="button" href="series/index.html">시리즈</button>
-				<a class="button" href="staffs/index.html">감독 및 출연진</button>
+		<div id="main" class="wrapper landing-bg">
+			<div class="landing-videobg">
+				<video autoplay muted loop>
+					<source src="assets/videos/teaser.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div id="bg-dim" class="background-dim dim"></div>
+			<div class="landing-content">
+				<p class="landing-desc">모든 이야기에는 시작이 있다.</p>
+				<img class="landing-logo" src="assets/images/insidious-logo.png" />
+				<div class="button-group standalone">
+					<a class="button" href="about/index.html">영화에 대해</a>
+					<a class="button" href="series/index.html">시리즈</a>
+					<a class="button" href="staffs/index.html">감독 및 출연진</a>
+				</div>
 			</div>
 		</div>
-		<script src="../assets/jquery-2.2.1.min.js"></script>
-		<script src="../assets/jquery.smoothState.min.js"></script>
-		<script src="../assets/script.js"></script>
+		<script src="assets/jquery-2.2.1.min.js"></script>
+		<script src="assets/jquery.smoothState.min.js"></script>
+		<script src="assets/script.js"></script>
 	<body>
 </html>
