@@ -25,23 +25,87 @@
 			</div>
 			<div class="main">
 				<div class="series-collection">
-					<div class="item">
-						<img src="../assets/images/poster0.jpg" />
-						<p><span>2011</span> 인시디어스</p>
+					<div class="item" onclick="openSeriesDialog(0)">
+						<img id="seriesdata0_img" src="../assets/images/poster0.jpg" />
+						<p id="seriesdata0_fname"><span id="seriesdata0_releasedate">2011</span> 인시디어스</p>
+						<data hidden id="seriesdata0_desc">설명 데이터</data>
+						<data hidden id="seriesdata0_runningtime">러닝타임 데이터</data>
+						<data hidden id="seriesdata0_director">감독 이름 데이터</data>
+						<data hidden id="seriesdata0_staffs">출연진 이름 데이터</data>
+						<data hidden id="seriesdata0_videolink">https://유튜브영상링크</data>
 					</div>
-					<div class="item">
-						<img src="../assets/images/poster1.jpg" />
-						<p><span>2013</span> 인시디어스 : 챕터 2</p>
+					<div class="item" onclick="openSeriesDialog(1)">
+						<img id="seriesdata1_img" src="../assets/images/poster1.jpg" />
+						<p id="seriesdata1_fname"><span id="seriesdata1_releasedate">2013</span> 인시디어스 : 챕터 2</p>
+						<data hidden id="seriesdata1_desc">설명 데이터</data>
+						<data hidden id="seriesdata1_runningtime">러닝타임 데이터</data>
+						<data hidden id="seriesdata1_director">감독 이름 데이터</data>
+						<data hidden id="seriesdata1_staffs">출연진 이름 데이터</data>
+						<data hidden id="seriesdata1_videolink">https://유튜브영상링크</data>
 					</div>
-					<div class="item">
-						<img src="../assets/images/poster2.jpg" />
-						<p><span>2015</span> 인시디어스 : 챕터 3</p>
+					<div class="item" onclick="openSeriesDialog(2)">
+						<img id="seriesdata2_img" src="../assets/images/poster2.jpg" />
+						<p id="seriesdata2_fname"><span id="seriesdata2_releasedate">2015</span> 인시디어스 : 챕터 3</p>
+						<data hidden id="seriesdata2_desc">설명 데이터</data>
+						<data hidden id="seriesdata2_runningtime">러닝타임 데이터</data>
+						<data hidden id="seriesdata2_director">감독 이름 데이터</data>
+						<data hidden id="seriesdata2_staffs">출연진 이름 데이터</data>
+						<data hidden id="seriesdata2_videolink">https://유튜브영상링크</data>
 					</div>
-					<div class="item">
-						<img src="../assets/images/poster3.jpg" />
-						<p><span>2023</span> 인시디어스 : 빨간 문</p>
+					<div class="item" onclick="openSeriesDialog(3)">
+						<img id="seriesdata3_img" src="../assets/images/poster3.jpg" />
+						<p id="seriesdata3_fname"><span id="seriesdata3_releasedate">2023</span> 인시디어스 : 빨간 문</p>
+						<data hidden id="seriesdata3_desc">설명 데이터</data>
+						<data hidden id="seriesdata3_runningtime">러닝타임 데이터</data>
+						<data hidden id="seriesdata3_director">감독 이름 데이터</data>
+						<data hidden id="seriesdata3_staffs">출연진 이름 데이터</data>
+						<data hidden id="seriesdata3_videolink">https://유튜브영상링크</data>
 					</div>
 				</div>
+				<div class="series-info-dialog hide">
+					<div class="content">
+						<div class="top">
+							<button onclick="closeSeriesDialog()">
+								<img src="../assets/images/chevron-left.svg" />
+								뒤로가기
+							</button>
+						</div>
+						<div class="info">
+							<div class="poster">
+								<img id="seriesdata_img" src="" />
+								<button id="seriesdata_videolink" onclick="loadTrailer(0)">
+									<img src="../assets/images/play-outline.svg" />
+									트레일러 보기
+								</button>
+							</div>
+							<div class="details">
+								<h1 id="seriesdata_fname"></h1>
+								<p id="seriesdata_desc"></p>
+								<table class="series-info-table">
+									<tbody>
+										<tr>
+											<td>개봉년도</th>
+											<td id="seriesdata_releasedate">qwerty</th>
+										</tr>
+										<tr>
+											<td>러닝타임</td>
+											<td id="seriesdata_runningtime">uiop</td>
+										</tr>
+										<tr>
+											<td>감독</td>
+											<td id="seriesdata_director">asdfgh</td>
+										</tr>
+										<tr>
+											<td>출연진</td>
+											<td id="seriesdata_staffs">jkl</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			
 			</div>
 		</div>
 		<script src="../assets/jquery-2.2.1.min.js"></script>

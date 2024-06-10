@@ -27,55 +27,101 @@
 				<div class="staff-subsection">
 					<h2>출연진</h2>
 					<div class="collection">
-						<div class="item">
-							<img src="../assets/images/staff0.jpg" />
-							<p>패트릭 윌슨</p>
-							<span>Patrick Wilson</span>
+						<div class="item" onclick="openStaffDialog(0)">
+							<img id="staffdata0_img" src="../assets/images/staff0.jpg" />
+							<p id="staffdata0_kname">패트릭 윌슨</p>
+							<span id="staffdata0_ename">Patrick Wilson</span>
+							<data hidden id="staffdata0_birth">출생 데이터</data>
+							<data hidden id="staffdata0_works">출연작품 데이터</data>
 						</div>
-						<div class="item">
-							<img src="../assets/images/staff1.jpg" />
-							<p>타이 심프킨</p>
-							<span>Ty Simpkins</span>
+						<div class="item" onclick="openStaffDialog(1)">
+							<img id="staffdata1_img" src="../assets/images/staff1.jpg" />
+							<p id="staffdata1_kname">타이 심프킨</p>
+							<span id="staffdata1_ename">Ty Simpkins</span>
+							<data hidden id="staffdata1_birth">출생 데이터</data>
+							<data hidden id="staffdata1_works">출연작품 데이터</data>
 						</div>
-						<div class="item">
-							<img src="../assets/images/staff2.jpg" />
-							<p>로즈 번</p>
-							<span>Rose Byrne</span>
+						<div class="item" onclick="openStaffDialog(2)">
+							<img id="staffdata2_img" src="../assets/images/staff2.jpg" />
+							<p id="staffdata2_kname">로즈 번</p>
+							<span id="staffdata2_ename">Rose Byrne</span>
+							<data hidden id="staffdata2_birth">출생 데이터</data>
+							<data hidden id="staffdata2_works">출연작품 데이터</data>
 						</div>
-						<div class="item">
-							<img src="../assets/images/staff3.jpg" />
-							<p>바바라 허시</p>
-							<span>Barbara Hershey</span>
+						<div class="item" onclick="openStaffDialog(3)">
+							<img id="staffdata3_img" src="../assets/images/staff3.jpg" />
+							<p id="staffdata3_kname">바바라 허시</p>
+							<span id="staffdata3_ename">Barbara Hershey</span>
+							<data hidden id="staffdata3_birth">출생 데이터</data>
+							<data hidden id="staffdata3_works">출연작품 데이터</data>
 						</div>
-						<div class="item">
-							<img src="../assets/images/staff4.jpg" />
-							<p>린 샤예</p>
-							<span>Lin Shaye</span>
+						<div class="item" onclick="openStaffDialog(4)">
+							<img id="staffdata4_img" src="../assets/images/staff4.jpg" />
+							<p id="staffdata4_kname">린 샤예</p>
+							<span id="staffdata4_ename">Lin Shaye</span>
+							<data hidden id="staffdata4_birth">출생 데이터</data>
+							<data hidden id="staffdata4_works">출연작품 데이터</data>
 						</div>
 					</div>
 				</div>
 				<div class="staff-subsection">
 					<h2>제작진</h2>
 					<div class="collection">
-						<div class="item">
-							<img src="../assets/images/staff5.jpg" />
-							<p>리 워넬</p>
-							<span>Leigh Whannel</span>
+						<div class="item" onclick="openStaffDialog(5)">
+							<img id="staffdata5_img" src="../assets/images/staff5.jpg" />
+							<p id="staffdata5_kname">리 워넬</p>
+							<span id="staffdata5_ename">Leigh Whannel</span>
+							<data hidden id="staffdata5_birth">출생 데이터</data>
+							<data hidden id="staffdata5_works">출연작품 데이터</data>
 						</div>
-						<div class="item">
-							<img src="../assets/images/staff6.jpg" />
-							<p>제임스 완</p>
-							<span>James Wan</span>
+						<div class="item"  onclick="openStaffDialog(6)">
+							<img id="staffdata6_img" src="../assets/images/staff6.jpg" />
+							<p id="staffdata6_kname">제임스 완</p>
+							<span id="staffdata6_ename">James Wan</span>
+							<data hidden id="staffdata6_birth">출생 데이터</data>
+							<data hidden id="staffdata6_works">출연작품 데이터</data>
 						</div>
-						<div class="item">
-							<img src="../assets/images/staff7.jpg" />
-							<p>애덤 로비텔</p>
-							<span>Adam Robitel</span>
+						<div class="item" onclick="openStaffDialog(7)">
+							<img id="staffdata7_img" src="../assets/images/staff7.jpg" />
+							<p id="staffdata7_kname">애덤 로비텔</p>
+							<span id="staffdata7_ename">Adam Robitel</span>
+							<data hidden id="staffdata7_birth">출생 데이터</data>
+							<data hidden id="staffdata7_works">출연작품 데이터</data>
 						</div>
-						<div class="item">
-							<img src="../assets/images/staff8.jpg" />
-							<p>스콧 팀즈</p>
-							<span>Scott Teems</span>
+						<div class="item" onclick="openStaffDialog(8)">
+							<img id="staffdata8_img" src="../assets/images/staff8.jpg" />
+							<p id="staffdata8_kname">스콧 팀즈</p>
+							<span id="staffdata8_ename">Scott Teems</span>
+							<data hidden id="staffdata8_birth">출생 데이터</data>
+							<data hidden id="staffdata8_works">출연작품 데이터</data>
+						</div>
+					</div>
+				</div>
+				<div class="staff-info-dialog hide">
+					<div class="content">
+						<div class="top">
+							<h1>출연진 / 배우</h1>
+							<button onclick="closeStaffDialog()"></button>
+						</div>
+						<div class="info">
+							<img id="staffdata_img" src="../assets/images/staff0.jpg" />
+							<div>
+								<h1 id="staffdata_name">한국어 이름<span>English Name</span></h1>
+								<div>
+									<table class="staff-info-table">
+										<tbody>
+											<tr>
+												<td>출생</th>
+												<td id="staffdata_birth">2001년 8월 6일 (22세)<br>미국 뉴욕</th>
+											</tr>
+											<tr>
+												<td>출연 작품</td>
+												<td id="staffdata_works">우주전쟁 (2005)<br>아이언맨3 (2013)<br>쥬라기 월드 (2015)<br>어벤져스 : 엔드게임 (2019) </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
