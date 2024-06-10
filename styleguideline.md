@@ -42,9 +42,14 @@ button-group 아래 button을 여러개 배치할 수 있습니다.
 p 안에 span이 감싸져 있으며, span은 년도 표시, p는 작품 이름을 표시합니다.
 ```html
 <div class="series-collection">
-	<div class="item">
-		<img src="../assets/images/poster0.jpg" />
-		<p><span>2024</span> 인시디어스 n</p>
+	<div class="item" onclick="openSeriesDialog((숫자))">
+		<img id="seriesdata(숫자)_img" src="../assets/images/poster(숫자).jpg" />
+		<p id="seriesdata(숫자)_fname"><span id="seriesdata(숫자)_releasedate">2024</span> 인시디어스 n</p>
+		<data hidden id="seriesdata(숫자)_desc">설명 데이터</data>
+		<data hidden id="seriesdata(숫자)_runningtime">러닝타임 데이터</data>
+		<data hidden id="seriesdata(숫자)_director">감독 이름 데이터</data>
+		<data hidden id="seriesdata(숫자)_staffs">출연진 이름 데이터</data>
+		<data hidden id="seriesdata(숫자)_videolink">https://유튜브영상링크</data>
 	</div>
 	
 	<div class="item"> ... </div>
@@ -85,14 +90,18 @@ assets/styles.css 스타일시트 파일을 열어서 196번째 줄에 가면 �
 h2에 있는 섹션 이름, 그리고 `<div class="item">` 을 복제해서 더 많은 스태프를 표시할 수 있습니다.
 p 에는 스태프의 한국어 이름, span에는 스태프의 영어 이름을 입력합니다.
 `/assets/images/` 에 `staff(숫자).jpg` 이름으로 포스터 사진을 업로드하여 사용합니다.
+`(숫자)` 를 위 이미지에 쓰인 (숫자) 와 동일하게 변경합니다. 스태프 아이템 간에 이 숫자는 겹쳐질 수 없습니다.
+
 ```html
 <div class="staff-subsection">
 	<h2>섹션 이름</h2>
 	<div class="collection">
-		<div class="item">
-			<img src="../assets/images/staff0.jpg" />
-			<p>이름</p>
-			<span>영문 이름</span>
+		<div class="item" onclick="openStaffDialog((숫자))">
+			<img id="staffdata(숫자)_img" src="../assets/images/staff(숫자).jpg" />
+			<p id="staffdata(숫자)_kname">이름</p>
+			<span id="staffdata(숫자)_ename">영문 이름</span>
+			<data hidden id="staffdata(숫자)_birth">출생 데이터</data>
+			<data hidden id="staffdata(숫자)_works">출연작품 데이터</data>
 		</div>
 		
 		<div class="item"> ... </div>
